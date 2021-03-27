@@ -108,7 +108,7 @@
                                 v-model="movie.video_format"
                                 id="video_format"
                                 name="video_format"
-                                class="block w-full transition duration-150 ease-in-out appearance-none bg-white dark:bg-gray-600 dark:text-gray-50 border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+                                class="block w-full transition duration-150 ease-in-out appearance-none bg-white dark:bg-gray-600 dark:text-gray-50 border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5">
                         </div>
                         <p v-if="errorMessage" class="text-red-500 mt-1">{{ errorMessage }}</p>
                     </div>
