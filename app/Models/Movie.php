@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Scout\Searchable;
@@ -14,7 +15,7 @@ class Movie extends Model
     use HasSlug;
     use Searchable;
 
-    protected $dates = ['expired_at'];
+    protected $dates = [''];
 
     protected $fillable = [
         'tmdb_id',
@@ -72,6 +73,11 @@ class Movie extends Model
     public function latest($column = 'created_at')
     {
         return $this->orderBy($column, 'desc');
+    }
+
+    public function scopeActive($query)
+    {
+        return $query->whereDate('created_at', '=', Carbon::today()->subDays(2));
     }
 
     public function genres()

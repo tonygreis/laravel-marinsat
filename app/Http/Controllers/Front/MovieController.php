@@ -36,7 +36,7 @@ class MovieController extends Controller
     {
         $movie = Movie::where('slug', $slug)->first();
 
-        SEOMeta::setTitle(Str::limit( $movie->title. ' | Marinsat.xyz shiko filma falas', 68, '.'));
+        SEOMeta::setTitle(Str::limit($movie->title. ' | Marinsat.xyz shiko filma falas', 68, '.'));
         SEOMeta::setDescription(Str::limit($movie->overview, 150));
         SEOMeta::setCanonical(url()->current());
         SEOMeta::addMeta('article:published_time', $movie->created_at->toW3CString(), 'property');
@@ -47,7 +47,7 @@ class MovieController extends Controller
         SEOMeta::addMeta('article:section', $movie->genres->first()->title, 'property');
         SEOMeta::addMeta('og:site_name', 'Filma me titra shqip - Marinsat.xyz', 'property');
         OpenGraph::setDescription(Str::limit($movie->overview, 150));
-        OpenGraph::setTitle(Str::limit( $movie->title. ' me Titra Shqip Marinsat.xyz', 68, '.'));
+        OpenGraph::setTitle(Str::limit($movie->title. ' me Titra Shqip Marinsat.xyz', 68, '.'));
         OpenGraph::addImage(url(asset('storage/movie/'. $movie->poster_path)));
         OpenGraph::addImage(url(asset('storage/movie/'. $movie->poster_path)), ['height' => 425, 'width' => 300]);
 
