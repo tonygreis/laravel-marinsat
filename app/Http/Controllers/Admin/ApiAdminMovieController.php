@@ -43,7 +43,7 @@ class ApiAdminMovieController extends Controller
 
     public function store(CreateMovieRequest $request)
     {
-       return $this->movieRepository->store($request->tmdb_id);
+        return $this->movieRepository->store($request->tmdb_id);
     }
 
     /**
@@ -69,7 +69,6 @@ class ApiAdminMovieController extends Controller
 
         $name = substr($request->poster_path, strrpos($request->poster_path, '/') + 1);
         if ('/' . $name === $movie->poster_path) {
-
             $movie->update([
                 'tmdb_id' => $request->tmdb_id,
                 'title' => $request->title,
@@ -82,7 +81,7 @@ class ApiAdminMovieController extends Controller
                 'overview' => $request->overview,
                 'poster_path' => '/' . $name,
                 'backdrop_path' => $request->backdrop_path,
-                'slug' => $movie->slug . '-me-titra-shqip'
+                'slug' => $movie->slug
             ]);
             return response('Movie Updated ');
         } else {
@@ -102,7 +101,7 @@ class ApiAdminMovieController extends Controller
                     'overview' => $request->overview,
                     'poster_path' => '/' . $name,
                     'backdrop_path' => $request->backdrop_path,
-                    'slug' => $movie->slug . '-me-titra-shqip'
+                    'slug' => $movie->slug
                 ]);
                 return response('Movie Updated and File Stored');
             }

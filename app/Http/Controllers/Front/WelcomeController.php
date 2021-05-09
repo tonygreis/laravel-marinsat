@@ -28,9 +28,11 @@ class WelcomeController extends Controller
         OpenGraph::addImage(url(asset('/img/logo.png')), ['height' => 290, 'width' => 185]);
         TwitterCard::setTitle('Filma me titra shqip - Marinsat.xyz - Shiko dhe shkarko filmat e fundit falas.');
         $movies = Movie::published(true)->orderBy('updated_at', 'desc')->take(12)->get()->map(function (Movie $movie) {
+            $today = Carbon::today();
+
             $movie->slug =  $movie->slug;
             $movie->poster_path = $movie->poster_path;
-            $movie['new'] = $movie->created_at->format('d') == Carbon::today() ? true : false;
+            $movie['new'] = $movie->created_at->format('d') == $today->format('d') ? true : false;
             return $movie;
         });
         $series = Serie::orderBy('updated_at', 'desc')->take(12)->get();
