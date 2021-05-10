@@ -11,11 +11,9 @@
                             <img class="object-cover lozad blur"
                                 data-src="{{ asset('storage/movie/' . $movie->poster_path) }}" alt="" />
                             @if ($movie->new)
-                                <div class="relative h-16 w-16">
-                                    <div
-                                        class="absolute left-0 top-0 p-1 bg-green-500 font-bold text-xl rounded-lg text-gray-100">
-                                        New</div>
-                                </div>
+                                <div
+                                    class="absolute left-0 top-0 h-8 w-12 content-center p-1 bg-green-500 font-bold text-xl rounded-lg text-gray-100">
+                                    New</div>
                             @endif
                             <div
                                 class="absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly">
