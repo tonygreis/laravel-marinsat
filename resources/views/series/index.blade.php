@@ -1,5 +1,5 @@
 <x-front-layout>
-<section class="max-w-6xl mx-auto mt-4 p-2">
+<section class="max-w-6xl mx-auto mt-4 p-2 bg-gray-900 rounded">
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 md:gap-2 rounded">
       @if (isset($series))
           @foreach($series as $serie)
@@ -25,7 +25,7 @@
     @endforeach
       @endif
     </div>
-    <div class="m-2 p-2 bg-gray-100 rounded-xl">
+    <div class="">
         {{ $series->links() }}
     </div>
 </section>

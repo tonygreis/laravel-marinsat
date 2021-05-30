@@ -1,5 +1,5 @@
 <x-front-layout>
-    <section class="max-w-6xl mx-auto mt-4 p-2">
+    <section class="max-w-6xl mx-auto mt-4 p-2 bg-gray-900 rounded">
         <div class="m-2 p-2 text-2xl font-bold text-main-mavi">
             <h1>Filma</h1>
         </div>
@@ -9,7 +9,7 @@
                     <x-slot name="image">
                         <div class="aspect-w-2 aspect-h-3">
                             <img class="object-cover lozad blur"
-                                data-src="{{ asset('storage/movie/' . $movie->poster_path) }}" alt="" />
+                                data-src="{{ asset('storage/movie/' . $movie->poster_path) }}" alt="{{ $movie->title }}" />
                             @if ($movie->new)
                                 <div
                                     class="absolute left-0 top-0 h-8 w-12 content-center p-1 bg-green-500 font-bold text-xl rounded-lg text-gray-100">
@@ -35,7 +35,7 @@
             @endforeach
         </div>
     </section>
-    <section class="max-w-6xl mx-auto mt-4 p-2">
+    <section class="max-w-6xl mx-auto mt-4 p-2 bg-gray-900 rounded">
         <div class="m-2 p-2 text-2xl font-bold text-main-mavi">
             <h2>Seriale</h2>
         </div>
@@ -45,7 +45,12 @@
                     <x-slot name="image">
                         <div class="aspect-w-2 aspect-h-3">
                             <img class="object-cover lozad blur"
-                                data-src="{{ asset('storage/serie/' . $serie->poster_path) }}" alt="" />
+                                data-src="{{ asset('storage/serie/' . $serie->poster_path) }}" alt="{{ $serie->name }} me titra shqip" />
+                            @if ($serie->new)
+                                <div
+                                    class="absolute left-0 top-0 h-8 w-12 content-center p-1 bg-green-500 font-bold text-xl rounded-lg text-gray-100">
+                                    New</div>
+                            @endif
                             <div
                                 class="absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly">
                                 <a href="{{ route('series.show', $serie->slug) }}"

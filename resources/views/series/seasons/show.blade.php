@@ -30,7 +30,7 @@
      <x-front.card>
         <x-slot name="image">
             <div class="aspect-w-2 aspect-h-3">
-                <img class="object-cover lozad blur" 
+                <img class="object-cover lozad blur"
                      data-src="{{ asset('storage/serie/season/'.$season->poster_path)  }}"
                      alt="" />
                 <div class="absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly">
@@ -45,12 +45,12 @@
             <a href="{{ route('episodes.show', $episode->slug) }}">
                 <h3 class="text-main-mavi font-bold text-sm">{{ $episode->name }}</h3>
             </a>
-      </x-front.card>      
+      </x-front.card>
     @endforeach
       @endif
     </div>
     @if($episodes->hasPages())
-    <div class="m-2 p-2 bg-gray-100 rounded-xl">
+    <div class="">
         {{ $episodes->links() }}
     </div>
     @endif

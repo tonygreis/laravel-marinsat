@@ -15,7 +15,7 @@ class WelcomeController extends Controller
 {
     public function welcome()
     {
-        SEOMeta::setTitle('Filma me titra shqip - Marinsat.xyz - Shiko dhe shkarko filmat e fundit falas.');
+        SEOMeta::setTitle('Filma me titra shqip - Marinsat.xyz - Shiko dhe shkarko filma e seriale.');
         SEOMeta::setDescription('Marinsat filma me titra shqip, Shikoni dhe shkakroni Filma Aksion, Filma Erotik, Filma Indian, Filma Turk, Seriale Turke me titra shqip');
         SEOMeta::setCanonical(url()->current());
         SEOMeta::addMeta('og:locale', 'en_US', 'property');
@@ -35,7 +35,14 @@ class WelcomeController extends Controller
             $movie['new'] = $movie->created_at->format('d') == $today->format('d') ? true : false;
             return $movie;
         });
-        $series = Serie::orderBy('updated_at', 'desc')->take(12)->get();
+        $series = Serie::orderBy('updated_at', 'desc')->take(12)->get()->map(function (Serie $serie) {
+            $today = Carbon::today();
+
+            $serie->slug =  $serie->slug;
+            $serie->poster_path = $serie->poster_path;
+            $serie['new'] = $serie->created_at->format('d') == $today->format('d') ? true : false;
+            return $serie;
+        });
 
         return view('welcome', compact('movies', 'series'));
     }

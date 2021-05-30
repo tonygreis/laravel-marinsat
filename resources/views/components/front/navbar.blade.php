@@ -9,7 +9,7 @@
                 </a>
                 <div class=" flex item-center">
                      <form method="GET" action="{{ route('search') }}">
-                         <input class="mx-2 lg:mx-6 rounded-lg" type="search" name="search">
+                         <input class="mx-2 lg:mx-6 rounded-lg bg-gray-200" type="search" name="search">
                      </form>
                 </div>
                 <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">

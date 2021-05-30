@@ -1,12 +1,12 @@
 <x-front-layout>
-<section class="max-w-6xl mx-auto mt-4 p-2">
+<section class="max-w-6xl mx-auto mt-4 p-2 bg-gray-900 rounded">
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 md:gap-2 rounded">
       @if (isset($movies))
           @foreach($movies as $movie)
      <x-front.card>
         <x-slot name="image">
             <div class="aspect-w-2 aspect-h-3">
-                <img class="object-cover lozad blur" 
+                <img class="object-cover lozad blur"
                      data-src="{{ asset('storage/movie/'.$movie->poster_path)  }}"
                      alt="" />
                 <div class="absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly">
@@ -21,12 +21,12 @@
             <a href="{{ route('movies.show', $movie->slug) }}">
                 <h3 class="text-white font-bold group-hover:text-blue-300 text-sm">{{ $movie->title }}</h3>
             </a>
-      </x-front.card>      
+      </x-front.card>
     @endforeach
       @endif
     </div>
-    @if ($movies->hasPages())    
-    <div class="m-2 p-2 bg-gray-100 rounded-xl">
+    @if ($movies->hasPages())
+    <div class="">
         {{ $movies->links() }}
     </div>
     @endif

@@ -24,14 +24,14 @@
             </div>
         </div>
     </section>
-    <section class="max-w-6xl mx-auto mt-4 p-2">
+    <section class="max-w-6xl mx-auto mt-4 p-2 bg-gray-900 rounded">
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 md:gap-2 rounded">
       @if (isset($seasons))
           @foreach($seasons as $season)
      <x-front.card>
         <x-slot name="image">
             <div class="aspect-w-2 aspect-h-3">
-                <img class="object-cover lozad blur" 
+                <img class="object-cover lozad blur"
                      data-src="{{ asset('storage/serie/season/'.$season->poster_path)  }}"
                      alt="" />
                 <div class="absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly">
@@ -46,7 +46,7 @@
             <a href="{{ route('seasons.show', [$serie->slug, $season->slug]) }}">
                 <h3 class="text-main-mavi font-bold text-sm">{{ $season->name }}</h3>
             </a>
-      </x-front.card>      
+      </x-front.card>
     @endforeach
       @endif
     </div>
