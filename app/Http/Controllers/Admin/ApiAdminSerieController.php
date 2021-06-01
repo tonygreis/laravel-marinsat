@@ -75,7 +75,7 @@ class ApiAdminSerieController extends Controller
                 'tmdb_id' => $request->tmdb_id,
                 'name' => $request->name,
                 'created_year' => $request->created_year,
-                'poster_path' => $name,
+                'poster_path' => '/'.$name,
             ]);
             return response('Serie Updated Successfully');
         }else{
@@ -86,10 +86,10 @@ class ApiAdminSerieController extends Controller
                 $serie->update([
                     'tmdb_id' => $request->tmdb_id,
                     'name' => $request->name,
-                    'created_year' => $request->created_year,
-                    'poster_path' => $name,
+                    'poster_path' => '/'. $name,
+                    'created_year' => $request->created_year
                 ]);
-                return response('Serie Updated and File Stored');
+                return response('Serie Updated and test');
             }
         }
     }

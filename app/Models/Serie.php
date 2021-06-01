@@ -14,7 +14,7 @@ class Serie extends Model
     use HasSlug;
     use Searchable;
 
-    protected $fillable = ['slug','name', 'tmdb_id', 'created_year'];
+    protected $fillable = ['slug','name', 'tmdb_id', 'poster_path', 'created_year'];
 
     public $asYouType = true;
 
