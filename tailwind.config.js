@@ -31,6 +31,7 @@ module.exports = {
             cyan: colors.cyan,
             purple: colors.purple,
             fuchsia: colors.fuchsia,
+            indigo: colors.indigo,
             "main-blue": "#454ADE",
             "main-gray": "#1B1F3B",
             "main-mavi": "#B14AED",

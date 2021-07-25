@@ -7570,7 +7570,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.tabs {\n    position: relative;\n    margin: 0 auto;\n}\n.tabs__item {\n    display: inline-block;\n    margin: 0 5px;\n    padding: 10px;\n    padding-bottom: 8px;\n    font-size: 16px;\n    letter-spacing: 0.8px;\n    color: gray;\n    text-decoration: none;\n    border: none;\n    background-color: transparent;\n    border-bottom: 2px solid transparent;\n    cursor: pointer;\n    transition: all 0.25s;\n}\n.tabs__item_active {\n    color: black;\n}\n.tabs__item:hover {\n    border-bottom: 2px solid gray;\n    color: black;\n}\n.tabs__item:focus {\n    outline: none;\n    border-bottom: 2px solid gray;\n    color: black;\n}\n.tabs__item:first-child {\n    margin-left: 0;\n}\n.tabs__item:last-child {\n    margin-right: 0;\n}\n.tabs__active-line {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    height: 2px;\n    background-color: black;\n    transition: transform 0.4s ease, width 0.4s ease;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.tabs {\r\n    position: relative;\r\n    margin: 0 auto;\n}\n.tabs__item {\r\n    display: inline-block;\r\n    margin: 0 5px;\r\n    padding: 10px;\r\n    padding-bottom: 8px;\r\n    font-size: 16px;\r\n    letter-spacing: 0.8px;\r\n    color: gray;\r\n    text-decoration: none;\r\n    border: none;\r\n    background-color: transparent;\r\n    border-bottom: 2px solid transparent;\r\n    cursor: pointer;\r\n    transition: all 0.25s;\n}\n.tabs__item_active {\r\n    color: black;\n}\n.tabs__item:hover {\r\n    border-bottom: 2px solid gray;\r\n    color: black;\n}\n.tabs__item:focus {\r\n    outline: none;\r\n    border-bottom: 2px solid gray;\r\n    color: black;\n}\n.tabs__item:first-child {\r\n    margin-left: 0;\n}\n.tabs__item:last-child {\r\n    margin-right: 0;\n}\n.tabs__active-line {\r\n    position: absolute;\r\n    bottom: 0;\r\n    left: 0;\r\n    height: 2px;\r\n    background-color: black;\r\n    transition: transform 0.4s ease, width 0.4s ease;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7594,7 +7594,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.tabs {\n    position: relative;\n    margin: 0 auto;\n}\n.tabs__item {\n    display: inline-block;\n    margin: 0 5px;\n    padding: 10px;\n    padding-bottom: 8px;\n    font-size: 16px;\n    letter-spacing: 0.8px;\n    color: gray;\n    text-decoration: none;\n    border: none;\n    background-color: transparent;\n    border-bottom: 2px solid transparent;\n    cursor: pointer;\n    transition: all 0.25s;\n}\n.tabs__item_active {\n    color: black;\n}\n.tabs__item:hover {\n    border-bottom: 2px solid gray;\n    color: black;\n}\n.tabs__item:focus {\n    outline: none;\n    border-bottom: 2px solid gray;\n    color: black;\n}\n.tabs__item:first-child {\n    margin-left: 0;\n}\n.tabs__item:last-child {\n    margin-right: 0;\n}\n.tabs__active-line {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    height: 2px;\n    background-color: black;\n    transition: transform 0.4s ease, width 0.4s ease;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.tabs {\r\n    position: relative;\r\n    margin: 0 auto;\n}\n.tabs__item {\r\n    display: inline-block;\r\n    margin: 0 5px;\r\n    padding: 10px;\r\n    padding-bottom: 8px;\r\n    font-size: 16px;\r\n    letter-spacing: 0.8px;\r\n    color: gray;\r\n    text-decoration: none;\r\n    border: none;\r\n    background-color: transparent;\r\n    border-bottom: 2px solid transparent;\r\n    cursor: pointer;\r\n    transition: all 0.25s;\n}\n.tabs__item_active {\r\n    color: black;\n}\n.tabs__item:hover {\r\n    border-bottom: 2px solid gray;\r\n    color: black;\n}\n.tabs__item:focus {\r\n    outline: none;\r\n    border-bottom: 2px solid gray;\r\n    color: black;\n}\n.tabs__item:first-child {\r\n    margin-left: 0;\n}\n.tabs__item:last-child {\r\n    margin-right: 0;\n}\n.tabs__active-line {\r\n    position: absolute;\r\n    bottom: 0;\r\n    left: 0;\r\n    height: 2px;\r\n    background-color: black;\r\n    transition: transform 0.4s ease, width 0.4s ease;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -16082,14 +16082,16 @@ var render = function() {
           _c("div", { staticClass: "flex justify-between w-full" }, [
             _c("div", { staticClass: "text-green-600" }, [
               _c("p", { staticClass: "mb-2 font-bold" }, [
-                _vm._v("\n                    Succes alert\n                ")
+                _vm._v(
+                  "\r\n                    Succes alert\r\n                "
+                )
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "text-xs" }, [
                 _vm._v(
-                  "\n                    " +
+                  "\r\n                    " +
                     _vm._s(_vm.successMessage) +
-                    "\n                "
+                    "\r\n                "
                 )
               ])
             ]),
@@ -16132,7 +16134,7 @@ var render = function() {
                   { staticClass: "leading-5 font-medium text-gray-500" },
                   [
                     _vm._v(
-                      "\n                        Make Inspire Call\n                    "
+                      "\r\n                        Make Inspire Call\r\n                    "
                     )
                   ]
                 ),
@@ -16214,7 +16216,7 @@ var render = function() {
                   { staticClass: "leading-5 font-medium text-gray-500" },
                   [
                     _vm._v(
-                      "\n                        Make Sitemap:generate Call\n                    "
+                      "\r\n                        Make Sitemap:generate Call\r\n                    "
                     )
                   ]
                 ),
@@ -16296,7 +16298,7 @@ var render = function() {
                   { staticClass: "leading-5 font-medium text-gray-500" },
                   [
                     _vm._v(
-                      "\n                        Make Backup:run Call\n                    "
+                      "\r\n                        Make Backup:run Call\r\n                    "
                     )
                   ]
                 ),
@@ -16378,7 +16380,7 @@ var render = function() {
                   { staticClass: "leading-5 font-medium text-gray-500" },
                   [
                     _vm._v(
-                      "\n                        Make Optimize Call\n                    "
+                      "\r\n                        Make Optimize Call\r\n                    "
                     )
                   ]
                 ),
@@ -16480,7 +16482,7 @@ var staticRenderFns = [
         _c(
           "h3",
           { staticClass: "text-lg leading-6 font-medium text-gray-900" },
-          [_vm._v("\n                Make Artisan Calls\n            ")]
+          [_vm._v("\r\n                Make Artisan Calls\r\n            ")]
         )
       ]
     )

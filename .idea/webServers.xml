@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="33aacdbd-4ca5-4433-902f-2db674984e57" name="laravel" url="http://162.0.229.234">
-        <fileTransfer accessType="FTPS" host="162.0.229.234" port="21">
+      <webServer id="33aacdbd-4ca5-4433-902f-2db674984e57" name="laravel" url="http://198.54.125.61">
+        <fileTransfer accessType="FTPS" host="198.54.125.61" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

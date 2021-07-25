@@ -27,9 +27,9 @@
     <meta name="keywords"
         content="filma me titra, filma me titra shqip, titra shqip, filma24, filmaon, mistreci, filma shqiptar, filma shqip, filma falas, seriale falas, seriale me titra shqip seriale shqip">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}" data-turbolinks-track="true">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}" data-turbolinks-track="true">
     <link rel="stylesheet" href="{{ asset('css/test.css') }}" data-turbolinks-track="true">
-    <script defer src="{{ mix('js/front.js') }}" data-turbolinks-track="true"></script>
+    <script defer src="{{ asset('js/front.js') }}" data-turbolinks-track="true"></script>
 
 
 </head>

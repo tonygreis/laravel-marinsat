@@ -1,6 +1,6 @@
 <x-front-layout>
     <section class="max-w-6xl mx-auto mt-4 p-2 bg-gray-900 rounded">
-        <div class="m-2 p-2 text-2xl font-bold text-main-mavi">
+        <div class="m-2 p-2 text-2xl font-bold text-main-mavi bg-indigo-700 rounded">
             <h1>Filma</h1>
         </div>
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 md:gap-2 rounded">
@@ -36,7 +36,7 @@
         </div>
     </section>
     <section class="max-w-6xl mx-auto mt-4 p-2 bg-gray-900 rounded">
-        <div class="m-2 p-2 text-2xl font-bold text-main-mavi">
+        <div class="m-2 p-2 text-2xl font-bold text-main-mavi bg-indigo-700">
             <h2>Seriale</h2>
         </div>
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 md:gap-2 rounded">
